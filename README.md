@@ -72,7 +72,8 @@ if _name_ == '_main_':
 ![robo](./img/robomaster.png)
 
 Insert image here
-
+![output](https://github.com/Saibandhavi75/mobilerobot-openloopcontrol/blob/main/B.jpeg?raw=true)
+![output]()
 
 <br/>
 <br/>
