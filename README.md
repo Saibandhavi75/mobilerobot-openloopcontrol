@@ -34,17 +34,36 @@ Step5:
 from robomaster import robot
 import time
 
-if __name__ == '__main__':
+if _name_ == '_main_':
     ep_robot = robot.Robot()
     ep_robot.initialize(conn_type="ap")
 
     ep_chassis = ep_robot.chassis
+    ep_led = ep_robot.led
 
-    ## Write your code here
+    ep_led.set_led(comp="all",r=255,g=0,b=0,effect="on")   
+       
+    ep_chassis.move(x=2, y=0, z=0, xy_speed=1.25).wait_for_completed()
+    ep_led.set_led(comp="all",r=0,g=255,b=0,effect="on") 
 
+    ep_chassis.move(x=0, y=0, z=360, xy_speed=1.25).wait_for_completed()
+    ep_led.set_led(comp="all",r=0,g=0,b=255,effect="on")  
+    ep_chassis.move(x=2.5, y=0, z=0, xy_speed=1.25).wait_for_completed()
+    ep_led.set_led(comp="all",r=255,g=0,b=0,effect="on") 
+    ep_chassis.move(x=0, y=0, z=90, xy_speed=1).wait_for_completed() 
+    ep_led.set_led(comp="all",r=0,g=255,b=0,effect="on") 
 
+    ep_chassis.move(x=1.5, y=0, z=0, xy_speed=1.25).wait_for_completed()
+    ep_led.set_led(comp="all",r=255,g=0,b=0,effect="on")
+    ep_chassis.move(x=0, y=0, z=90, xy_speed=1).wait_for_completed() 
+    ep_led.set_led(comp="all",r=0,g=0,b=255,effect="on")
 
-    
+    ep_chassis.move(x=2.5, y=0, z=0, xy_speed=1.25).wait_for_completed()
+    ep_led.set_led(comp="all",r=0,g=0,b=255,effect="on")
+    ep_chassis.move(x=0, y=0, z=90, xy_speed=1).wait_for_completed()
+    ep_led.set_led(comp="all",r=0,g=255,b=0,effect="on")
+    ep_chassis.move(x=2, y=0, z=0, xy_speed=1.25).wait_for_completed()
+
     ep_robot.close()
 ```
 
@@ -64,12 +83,7 @@ Insert image here
 
 Upload your video in Youtube and paste your video-id here
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
-<br/>
-<br/>
-<br/>
-<br/>
 
 ## Result:
 Thus the python program code is developed to move the mobilerobot in the predefined path.
