@@ -73,7 +73,7 @@ if _name_ == '_main_':
 
 Insert image here
 ![output](https://github.com/Saibandhavi75/mobilerobot-openloopcontrol/blob/main/B.jpeg?raw=true)
-![output]()
+![output](https://github.com/Saibandhavi75/mobilerobot-openloopcontrol/blob/main/B2.jpeg?raw=true)
 
 <br/>
 <br/>
